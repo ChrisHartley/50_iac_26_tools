@@ -181,7 +181,7 @@ def extract_data(input_file, output_file, file_format):
                     pass
                 else:
                     for field in file_format:
-                       record[field['field_name']] = line[int(field['start'])-1:int(field['end'])-1].strip().encode("utf8")  # we convert from 1 index as used in 50 IAC 26 to 0 index, as used by python
+                       record[field['field_name']] = line[int(field['start'])-1:int(field['end'])-1].strip()  # we convert from 1 index as used in 50 IAC 26 to 0 index, as used by python
                     writer.writerow(record)
 
 
