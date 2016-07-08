@@ -8,7 +8,6 @@ Released under the GPL V3.
 """
 
 import argparse
-import pprint
 import csv
 
 # used for progress bar
